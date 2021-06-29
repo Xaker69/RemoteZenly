@@ -3,24 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C409F1EF26E85A809EC3E838 /* Pods_RemoteZenly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */; };
 		CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C532639788E00540D8E /* AppDelegate.swift */; };
-		CBA64C562639788E00540D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C552639788E00540D8E /* ViewController.swift */; };
 		CBA64C582639788F00540D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA64C572639788F00540D8E /* Assets.xcassets */; };
-		CBA64C5B2639788F00540D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA64C592639788F00540D8E /* Main.storyboard */; };
+		CBA64C662639790100540D8E /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C652639790100540D8E /* FriendsViewController.swift */; };
+		CBA64C6B2639794A00540D8E /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C6A2639794A00540D8E /* FriendsView.swift */; };
+		CBA64C8226397E5500540D8E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C8126397E5500540D8E /* main.swift */; };
+		CBA64C8626397E8800540D8E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C8526397E8800540D8E /* MainWindowController.swift */; };
+		CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C8B26398B7300540D8E /* TranslucentWindow.swift */; };
+		CBA64C902639A86000540D8E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C8F2639A86000540D8E /* Cell.swift */; };
+		CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C952639A94200540D8E /* NSCollectionViewItem.swift */; };
+		CBA64C9B2639AD1400540D8E /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C9A2639AD1400540D8E /* ContactModel.swift */; };
+		CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C9E2639AD8C00540D8E /* NSCollectionView+Item.swift */; };
+		CBA64CA32639AEED00540D8E /* FriendsContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64CA22639AEED00540D8E /* FriendsContactCell.swift */; };
+		CBA64CAA2639BB5200540D8E /* NSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64CA92639BB5200540D8E /* NSLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C7A5886B4DAE6D74901847 /* Pods-RemoteZenly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.debug.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.debug.xcconfig"; sourceTree = "<group>"; };
+		3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.release.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.release.xcconfig"; sourceTree = "<group>"; };
+		ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteZenly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA64C502639788E00540D8E /* RemoteZenly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteZenly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA64C532639788E00540D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBA64C552639788E00540D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBA64C572639788F00540D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBA64C5A2639788F00540D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBA64C5C2639788F00540D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA64C5D2639788F00540D8E /* RemoteZenly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteZenly.entitlements; sourceTree = "<group>"; };
+		CBA64C652639790100540D8E /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		CBA64C6A2639794A00540D8E /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		CBA64C8126397E5500540D8E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CBA64C8526397E8800540D8E /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		CBA64C8B26398B7300540D8E /* TranslucentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentWindow.swift; sourceTree = "<group>"; };
+		CBA64C8F2639A86000540D8E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		CBA64C952639A94200540D8E /* NSCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionViewItem.swift; sourceTree = "<group>"; };
+		CBA64C9A2639AD1400540D8E /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		CBA64C9E2639AD8C00540D8E /* NSCollectionView+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Item.swift"; sourceTree = "<group>"; };
+		CBA64CA22639AEED00540D8E /* FriendsContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsContactCell.swift; sourceTree = "<group>"; };
+		CBA64CA92639BB5200540D8E /* NSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C409F1EF26E85A809EC3E838 /* Pods_RemoteZenly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1C58A83D78AC036B8A67276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBA64C472639788E00540D8E = {
 			isa = PBXGroup;
 			children = (
 				CBA64C522639788E00540D8E /* RemoteZenly */,
 				CBA64C512639788E00540D8E /* Products */,
+				F02B12F6A0656282B6A3961C /* Pods */,
+				A1C58A83D78AC036B8A67276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +86,80 @@
 		CBA64C522639788E00540D8E /* RemoteZenly */ = {
 			isa = PBXGroup;
 			children = (
+				CBA64C932639A92600540D8E /* Common */,
+				CBA64C64263978CC00540D8E /* Module */,
 				CBA64C532639788E00540D8E /* AppDelegate.swift */,
-				CBA64C552639788E00540D8E /* ViewController.swift */,
+				CBA64C8526397E8800540D8E /* MainWindowController.swift */,
+				CBA64C8126397E5500540D8E /* main.swift */,
 				CBA64C572639788F00540D8E /* Assets.xcassets */,
-				CBA64C592639788F00540D8E /* Main.storyboard */,
 				CBA64C5C2639788F00540D8E /* Info.plist */,
 				CBA64C5D2639788F00540D8E /* RemoteZenly.entitlements */,
+				CBA64C8B26398B7300540D8E /* TranslucentWindow.swift */,
 			);
 			path = RemoteZenly;
+			sourceTree = "<group>";
+		};
+		CBA64C64263978CC00540D8E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C992639AD0D00540D8E /* Model */,
+				CBA64C692639793700540D8E /* View */,
+				CBA64C652639790100540D8E /* FriendsViewController.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CBA64C692639793700540D8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C8E2639A85500540D8E /* Cell */,
+				CBA64C6A2639794A00540D8E /* FriendsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA64C8E2639A85500540D8E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C8F2639A86000540D8E /* Cell.swift */,
+				CBA64CA22639AEED00540D8E /* FriendsContactCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CBA64C932639A92600540D8E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C942639A92D00540D8E /* Extension */,
+				CBA64CA92639BB5200540D8E /* NSLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CBA64C942639A92D00540D8E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C952639A94200540D8E /* NSCollectionViewItem.swift */,
+				CBA64C9E2639AD8C00540D8E /* NSCollectionView+Item.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CBA64C992639AD0D00540D8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBA64C9A2639AD1400540D8E /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F02B12F6A0656282B6A3961C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06C7A5886B4DAE6D74901847 /* Pods-RemoteZenly.debug.xcconfig */,
+				3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBA64C602639788F00540D8E /* Build configuration list for PBXNativeTarget "RemoteZenly" */;
 			buildPhases = (
+				69750642F66A9248BFA54E24 /* [CP] Check Pods Manifest.lock */,
 				CBA64C4C2639788E00540D8E /* Sources */,
 				CBA64C4D2639788E00540D8E /* Frameworks */,
 				CBA64C4E2639788E00540D8E /* Resources */,
+				1BBA227F4FE3744306E6ADF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,34 +222,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA64C582639788F00540D8E /* Assets.xcassets in Resources */,
-				CBA64C5B2639788F00540D8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBA227F4FE3744306E6ADF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69750642F66A9248BFA54E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteZenly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBA64C4C2639788E00540D8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA64C562639788E00540D8E /* ViewController.swift in Sources */,
+				CBA64C8226397E5500540D8E /* main.swift in Sources */,
+				CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */,
+				CBA64C9B2639AD1400540D8E /* ContactModel.swift in Sources */,
+				CBA64C902639A86000540D8E /* Cell.swift in Sources */,
+				CBA64C8626397E8800540D8E /* MainWindowController.swift in Sources */,
+				CBA64CAA2639BB5200540D8E /* NSLabel.swift in Sources */,
+				CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */,
+				CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */,
+				CBA64C662639790100540D8E /* FriendsViewController.swift in Sources */,
+				CBA64C6B2639794A00540D8E /* FriendsView.swift in Sources */,
 				CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */,
+				CBA64CA32639AEED00540D8E /* FriendsContactCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CBA64C592639788F00540D8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBA64C5A2639788F00540D8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CBA64C5E2639788F00540D8E /* Debug */ = {
@@ -268,19 +409,21 @@
 		};
 		CBA64C612639788F00540D8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C7A5886B4DAE6D74901847 /* Pods-RemoteZenly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RemoteZenly/RemoteZenly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 722H6H96NV;
+				DEVELOPMENT_TEAM = N422RJM586;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RemoteZenly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tursunov.RemoteZenly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -289,19 +432,21 @@
 		};
 		CBA64C622639788F00540D8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RemoteZenly/RemoteZenly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 722H6H96NV;
+				DEVELOPMENT_TEAM = N422RJM586;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RemoteZenly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tursunov.RemoteZenly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

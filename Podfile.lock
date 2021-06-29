@@ -1,0 +1,24 @@
+PODS:
+  - Atributika (4.9.10)
+  - Kingfisher (6.3.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Atributika (~> 4.9.10)
+  - Kingfisher (~> 6.0)
+  - SnapKit (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Atributika
+    - Kingfisher
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Atributika: cf87f95f1d31d9cdb9af611a2b4e00672e9ae195
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 2aaee948b6a5f97ed4a427de2ee57b9770919e29
+
+COCOAPODS: 1.10.1
