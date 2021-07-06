@@ -22,8 +22,6 @@ class FriendsViewController: NSViewController {
         mainView.collectionView.dataSource = self
         mainView.collectionView.delegate = self
         
-        NSWorkspace.shared.runningApplications
-        
     }
     
     override func viewDidAppear() {

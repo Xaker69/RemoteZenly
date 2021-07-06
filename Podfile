@@ -9,4 +9,6 @@ target 'RemoteZenly' do
   pod 'SnapKit', '~> 5.0.1'
   pod 'Kingfisher', '~> 6.0'
   pod 'Atributika', '~> 4.9.10'
+  pod 'Moya'
+  
 end

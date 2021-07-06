@@ -3,7 +3,7 @@ import SnapKit
 
 class FriendsView: NSView {
     
-    @objc dynamic var test: NSRunningApplication? = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })
+    @objc dynamic var runningApp: NSRunningApplication? = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })
     var observation1: NSKeyValueObservation?
     var observation: NSKeyValueObservation?
     
@@ -26,7 +26,7 @@ class FriendsView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
-        observation1 = observe(\.test, options: .new, changeHandler: { object, change in
+        observation1 = observe(\.runningApp, options: .new, changeHandler: { object, change in
             if let change = change.newValue, let newApp = change {
                 self.updateUserView(with: newApp)
             }
@@ -58,7 +58,7 @@ class FriendsView: NSView {
     private func addObserv() {
         observation?.invalidate()
         observation = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })?.observe(\.isActive, options: .new, changeHandler: { object, change in
-            self.test = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })
+            self.runningApp = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })
         })
     }
     
