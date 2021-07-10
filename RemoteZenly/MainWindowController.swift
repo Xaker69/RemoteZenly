@@ -15,7 +15,7 @@ class MainWindowController: NSWindowController {
 
     convenience init() {
         let window = TranslucentWin(contentRect: .zero, styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView], backing: .buffered, defer: false)
-        window.contentViewController = FriendsViewController()
+        window.contentViewController = WelcomeViewController()
         window.center()
         window.setFrameAutosaveName("Main Window")
         window.makeKeyAndOrderFront(nil)

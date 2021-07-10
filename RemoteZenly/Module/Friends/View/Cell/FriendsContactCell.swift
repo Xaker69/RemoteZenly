@@ -35,8 +35,8 @@ class FriendsContactCell: NSView {
     
     let timeLabel: NSLabel = {
         let label = NSLabel()
-        label.font = .systemFont(ofSize: 14.0)
-        label.textColor = .white
+        label.font = .systemFont(ofSize: 14.0, weight: .regular)
+        label.textColor = NSColor.white.withAlphaComponent(0.5)
         label.stringValue = "сейчас"
         
         return label
@@ -93,6 +93,14 @@ class FriendsContactCell: NSView {
         animate.fillMode = .forwards
         animate.isRemovedOnCompletion = false
         layer?.add(animate, forKey: "backgroundColor")
+    }
+    
+    override func rightMouseUp(with event: NSEvent) {
+        super.rightMouseUp(with: event)
+        
+        print("=== rightMouseUp")
+        let url = URL(string: "https://oauth.vk.com/authorize?client_id=7898732&display=page&redirect_uri=&scope=friends&response_type=token&v=5.131&state=123456")!
+        NSWorkspace.shared.open([url], withAppBundleIdentifier: "com.apple.Safari", options: [], additionalEventParamDescriptor: nil, launchIdentifiers: nil)
     }
     
     private func updateSubtitle() {

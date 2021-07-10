@@ -14,6 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: NSImage.Name("menuBarExample"))
             button.action = #selector(printQuote(_:))
         }
+        
+        NSAppleEventManager.shared().setEventHandler(self, andSelector: #selector(handleURLEvent), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -27,6 +29,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       
       print("\(quoteText) — \(quoteAuthor)")
     }
-
+    
+    @objc func handleURLEvent(event: NSAppleEventDescriptor, withReplyEvent replyEvent: NSAppleEventDescriptor) {
+        let url = event.paramDescriptor(forKeyword: keyDirectObject)?.stringValue
+        print(url)
+    }
 }
 

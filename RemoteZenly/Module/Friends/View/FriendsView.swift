@@ -55,6 +55,10 @@ class FriendsView: NSView {
         setupConstraints()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func addObserv() {
         observation?.invalidate()
         observation = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })?.observe(\.isActive, options: .new, changeHandler: { object, change in
@@ -65,10 +69,6 @@ class FriendsView: NSView {
     private func updateUserView(with newApplication: NSRunningApplication) {
         userView.appImageView.image = newApplication.icon
         userView.appName = newApplication.localizedName ?? "appName"
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupConstraints() {
