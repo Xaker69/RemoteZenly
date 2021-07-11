@@ -7,7 +7,7 @@ class WelcomeViewController: NSViewController, WKUIDelegate {
         return view as! WelcomeView
     }
     
-    var webView: WKWebView!
+//    var webView: WKWebView!
     
     override func loadView() {
         let view = WelcomeView()
@@ -36,7 +36,7 @@ class WelcomeViewController: NSViewController, WKUIDelegate {
 //            make.bottom.equalToSuperview()
 //        }
     }
-    
+        
 }
 
 //extension WelcomeViewController: WKNavigationDelegate {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D942697174B00C0F70E /* WelcomeViewController.swift */; };
 		21065D982697179D00C0F70E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D972697179D00C0F70E /* WelcomeView.swift */; };
+		2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B51269A0A0F00796952 /* FlatButton.swift */; };
+		2C402B83269A38F100796952 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B82269A38F100796952 /* ButtonView.swift */; };
 		C409F1EF26E85A809EC3E838 /* Pods_RemoteZenly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */; };
 		CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA64C532639788E00540D8E /* AppDelegate.swift */; };
 		CBA64C582639788F00540D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA64C572639788F00540D8E /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		06C7A5886B4DAE6D74901847 /* Pods-RemoteZenly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.debug.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.debug.xcconfig"; sourceTree = "<group>"; };
 		21065D942697174B00C0F70E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		21065D972697179D00C0F70E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		2C402B51269A0A0F00796952 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
+		2C402B82269A38F100796952 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.release.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.release.xcconfig"; sourceTree = "<group>"; };
 		ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteZenly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA64C502639788E00540D8E /* RemoteZenly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteZenly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +78,6 @@
 		21065D92269716F500C0F70E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				21065D992697186900C0F70E /* Model */,
 				21065D962697178800C0F70E /* View */,
 				21065D942697174B00C0F70E /* WelcomeViewController.swift */,
 			);
@@ -87,13 +90,6 @@
 				21065D972697179D00C0F70E /* WelcomeView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		21065D992697186900C0F70E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A1C58A83D78AC036B8A67276 /* Frameworks */ = {
@@ -130,8 +126,8 @@
 				CBA64C532639788E00540D8E /* AppDelegate.swift */,
 				CBA64C8526397E8800540D8E /* MainWindowController.swift */,
 				CBA64C8126397E5500540D8E /* main.swift */,
-				CBA64C572639788F00540D8E /* Assets.xcassets */,
 				CBA64C5C2639788F00540D8E /* Info.plist */,
+				CBA64C572639788F00540D8E /* Assets.xcassets */,
 				CBA64C5D2639788F00540D8E /* RemoteZenly.entitlements */,
 				CBA64C8B26398B7300540D8E /* TranslucentWindow.swift */,
 			);
@@ -170,6 +166,8 @@
 			children = (
 				CBA64C942639A92D00540D8E /* Extension */,
 				CBA64CA92639BB5200540D8E /* NSLabel.swift */,
+				2C402B51269A0A0F00796952 /* FlatButton.swift */,
+				2C402B82269A38F100796952 /* ButtonView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -314,6 +312,7 @@
 			files = (
 				CBA64C8226397E5500540D8E /* main.swift in Sources */,
 				CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */,
+				2C402B83269A38F100796952 /* ButtonView.swift in Sources */,
 				CBA64C9B2639AD1400540D8E /* ContactModel.swift in Sources */,
 				CBA64C902639A86000540D8E /* Cell.swift in Sources */,
 				CBA64C8626397E8800540D8E /* MainWindowController.swift in Sources */,
@@ -322,6 +321,7 @@
 				CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */,
 				CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */,
 				CBA64C662639790100540D8E /* FriendsViewController.swift in Sources */,
+				2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */,
 				CBA64C6B2639794A00540D8E /* FriendsView.swift in Sources */,
 				CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */,
 				CBA64CA32639AEED00540D8E /* FriendsContactCell.swift in Sources */,
@@ -463,7 +463,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.RemoteZenly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -486,7 +486,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.RemoteZenly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

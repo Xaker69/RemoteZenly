@@ -2,11 +2,11 @@ import Cocoa
 
 extension NSColor {
     
-    class func fromHex(hex: Int, alpha: Float) -> NSColor {
+    class func fromHex(hex: Int, alpha: CGFloat = 1.0) -> NSColor {
         let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
         let green = CGFloat((hex & 0xFF00) >> 8) / 255.0
         let blue = CGFloat((hex & 0xFF)) / 255.0
-        return NSColor(calibratedRed: red, green: green, blue: blue, alpha: 1.0)
+        return NSColor(calibratedRed: red, green: green, blue: blue, alpha: alpha)
     }
     
 }

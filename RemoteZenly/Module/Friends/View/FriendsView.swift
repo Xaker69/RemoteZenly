@@ -20,6 +20,7 @@ class FriendsView: NSView {
     let userView: FriendsContactCell = {
         let view = FriendsContactCell()
         view.isMouseTracking = true
+        
         return view
     }()
     
