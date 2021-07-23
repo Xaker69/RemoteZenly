@@ -57,13 +57,6 @@ class WelcomeView: NSView {
     }()
     
     let loginButton: ButtonView = {
-//        let button = FlatButton()
-//        button.text = "Есть приглашение?  Войти"
-//        button.titleFont = NSFont.systemFont(ofSize: 14, weight: .bold)
-//        button.textColor = .white
-//        button.backgroundColor = NSColor.black.withAlphaComponent(0.2)
-//        button.layer?.cornerRadius = 10
-        
         let button = ButtonView()
         button.title = "Есть приглашение?  Войти"
         button.titleFont = NSFont.systemFont(ofSize: 14, weight: .bold)

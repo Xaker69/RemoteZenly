@@ -64,3 +64,19 @@ extension FriendsViewController: NSCollectionViewDataSource, NSCollectionViewDel
     }
     
 }
+
+extension FriendsViewController: NSViewControllerPresentationAnimator {
+    func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
+        NSAnimationContext.runAnimationGroup { context in
+            context.duration = 0.3
+            viewController.view.animator().alphaValue = 1
+        } completionHandler: {
+            viewController.view.isHidden = false
+            viewController.view.alphaValue = 1
+        }
+    }
+
+    func animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
+        
+    }
+}

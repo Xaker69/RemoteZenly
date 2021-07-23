@@ -28,15 +28,15 @@ class FlatButton: NSButton {
         var strokeColor: NSColor?
         rectanglePath.fill()
         
-//        if isHighlighted {
-//            strokeColor = backgroundColor
-//            fillColor = onClickColor
-//        } else {
+        if isHighlighted {
+            strokeColor = backgroundColor
+            fillColor = onClickColor
+        } else {
             strokeColor = onClickColor
             fillColor = backgroundColor
-//        }
+        }
         
-//        strokeColor?.setStroke()
+        strokeColor?.setStroke()
         rectanglePath.lineWidth = 5
         rectanglePath.stroke()
         fillColor?.setFill()

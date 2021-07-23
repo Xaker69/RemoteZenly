@@ -3,4 +3,70 @@
    uuid = "FB16864F-AC22-416C-ACA1-467D91872956"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AAE6F58-C457-4639-8F25-CECC2877B6C6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RemoteZenly/Module/Friends/FriendsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "animatePresentation(of:from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8AAE6F58-C457-4639-8F25-CECC2877B6C6 - d226b6837828d2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RemoteZenly.FriendsViewController.animatePresentation(of: __C.NSViewController, from: __C.NSViewController) -&gt; ()"
+                  moduleName = "RemoteZenly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xaker/Desktop/RemoteZenly/RemoteZenly/Module/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "8AAE6F58-C457-4639-8F25-CECC2877B6C6 - e4883bdd9926fc96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSAnimationContext) -&gt; () in RemoteZenly.FriendsViewController.animatePresentation(of: __C.NSViewController, from: __C.NSViewController) -&gt; ()"
+                  moduleName = "RemoteZenly"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xaker/Desktop/RemoteZenly/RemoteZenly/Module/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AC861EC-0620-4028-A249-AED9D2D8A849"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RemoteZenly/Module/Friends/FriendsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "animateDismissal(of:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
