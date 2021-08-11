@@ -3,6 +3,8 @@ import SnapKit
 
 class FriendsView: NSView {
     
+    var viewClicked: (() -> ())?
+    
     @objc dynamic var runningApp: NSRunningApplication? = NSWorkspace.shared.runningApplications.first(where: { $0.isActive })
     var observation1: NSKeyValueObservation?
     var observation: NSKeyValueObservation?

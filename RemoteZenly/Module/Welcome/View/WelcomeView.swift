@@ -1,6 +1,6 @@
 import Cocoa
 
-class WelcomeView: NSView {
+class WelcomeView: NavigationView {
     
     let emojiLabel: NSLabel = {
         let label = NSLabel()
@@ -69,15 +69,6 @@ class WelcomeView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
-        let visualEffectView = NSVisualEffectView(frame: bounds)
-        visualEffectView.autoresizingMask = [.width, .height]
-        visualEffectView.material = .appearanceBased
-        visualEffectView.blendingMode = .behindWindow
-        visualEffectView.state = .active
-        
-        translatesAutoresizingMaskIntoConstraints = true
-        
-        addSubview(visualEffectView)
         addSubview(emojiLabel)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
@@ -92,7 +83,8 @@ class WelcomeView: NSView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupConstreints() {
+    override func setupConstreints() {
+        super.setupConstreints()
         emojiLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(61)
             make.leading.equalToSuperview()
