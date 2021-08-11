@@ -11,6 +11,16 @@ class NavigationView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
+        initialization()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        initialization()
+    }
+    
+    func initialization() {
         let visualEffectView = NSVisualEffectView(frame: bounds)
         visualEffectView.autoresizingMask = [.width, .height]
         visualEffectView.material = .appearanceBased
@@ -21,19 +31,7 @@ class NavigationView: NSView {
         
         addSubview(visualEffectView)
         addSubview(backView)
-    }
-    
-//    override func layout() {
-//        super.layout()
-//        
-//        setupConstreints()
-//    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupConstreints() {
+        
         backView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(11)

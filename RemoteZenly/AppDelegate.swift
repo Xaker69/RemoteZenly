@@ -34,5 +34,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let url = event.paramDescriptor(forKeyword: keyDirectObject)?.stringValue
         print(url)
     }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 }
 

@@ -46,6 +46,22 @@ class ButtonView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        commonInit()
+    }
+    
+    override func mouseUp(with event: NSEvent) {
+        super.mouseUp(with: event)
+        
+        action?()
+    }
+    
+    private func commonInit() {
         let area = NSTrackingArea(rect: bounds, options: [.mouseEnteredAndExited, .activeAlways, .inVisibleRect], owner: self, userInfo: nil)
         
         addTrackingArea(area)
@@ -56,16 +72,6 @@ class ButtonView: NSView {
         addSubview(imageView)
         
         setupConstraints()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func mouseUp(with event: NSEvent) {
-        super.mouseUp(with: event)
-        
-        action?()
     }
     
     private func setupConstraints() {

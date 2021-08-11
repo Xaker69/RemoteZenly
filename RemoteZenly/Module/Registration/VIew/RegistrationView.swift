@@ -1,7 +1,7 @@
 import Cocoa
 import WebKit
 
-class RegistrationView: NSView {
+class RegistrationView: NavigationView {
     
     let emojiLabel: NSLabel = {
         let label = NSLabel()
@@ -51,18 +51,9 @@ class RegistrationView: NSView {
         return view
     }()
     
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
+    override func initialization() {
+        super.initialization()
         
-        let visualEffectView = NSVisualEffectView(frame: bounds)
-        visualEffectView.autoresizingMask = [.width, .height]
-        visualEffectView.material = .appearanceBased
-        visualEffectView.blendingMode = .behindWindow
-        visualEffectView.state = .active
-        
-        translatesAutoresizingMaskIntoConstraints = true
-        
-        addSubview(visualEffectView)
         addSubview(emojiLabel)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
@@ -70,10 +61,6 @@ class RegistrationView: NSView {
         addSubview(webView)
         
         setupConstreints()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupConstreints() {

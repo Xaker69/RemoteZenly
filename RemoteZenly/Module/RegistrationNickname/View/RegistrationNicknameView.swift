@@ -1,6 +1,6 @@
 import Cocoa
 
-class RegistrationNameView: NSView {
+class RegistrationNicknameView: NavigationView {
     
     let emojiLabel: NSLabel = {
         let label = NSLabel()
@@ -31,45 +31,24 @@ class RegistrationNameView: NSView {
         return label
     }()
     
-    let nameContainer: NSView = {
-        let view = NSView()
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
+    let nameFieldView: TextFieldView = {
+        let view = TextFieldView()
+        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.08).cgColor
         view.layer?.cornerRadius = 10
+        view.highlightedBackgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
+        view.textField.placeholderString = "Имя"
         
         return view
     }()
     
-    let lastNameContainer: NSView = {
-        let view = NSView()
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
+    let lastNameFieldView: TextFieldView = {
+        let view = TextFieldView()
+        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.08).cgColor
         view.layer?.cornerRadius = 10
+        view.highlightedBackgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
+        view.textField.placeholderString = "Фамилия"
         
         return view
-    }()
-    
-    let nameField: NSTextField = {
-        let field = NSTextField()
-        field.placeholderString = "Имя"
-        field.font = .systemFont(ofSize: 18, weight: .bold)
-        field.isBezeled = false
-        field.backgroundColor = .clear
-        field.isBordered = false
-        field.focusRingType = .none
-        
-        return field
-    }()
-    
-    let lastNameField: NSTextField = {
-        let field = NSTextField()
-        field.placeholderString = "Фамилия"
-        field.font = .systemFont(ofSize: 18, weight: .bold)
-        field.isBezeled = false
-        field.backgroundColor = .clear
-        field.focusRingType = .none
-        
-        return field
     }()
     
     let nextButton: FlatButton = {
@@ -87,33 +66,17 @@ class RegistrationNameView: NSView {
         return button
     }()
     
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
+    override func initialization() {
+        super.initialization()
         
-        let visualEffectView = NSVisualEffectView(frame: bounds)
-        visualEffectView.autoresizingMask = [.width, .height]
-        visualEffectView.material = .appearanceBased
-        visualEffectView.blendingMode = .behindWindow
-        visualEffectView.state = .active
-        
-        translatesAutoresizingMaskIntoConstraints = true
-        
-        addSubview(visualEffectView)
         addSubview(emojiLabel)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
-        addSubview(nameContainer)
-        addSubview(lastNameContainer)
+        addSubview(nameFieldView)
+        addSubview(lastNameFieldView)
         addSubview(nextButton)
         
-        nameContainer.addSubview(nameField)
-        lastNameContainer.addSubview(lastNameField)
-        
         setupConstreints()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupConstreints() {
@@ -134,27 +97,17 @@ class RegistrationNameView: NSView {
             make.trailing.equalToSuperview().offset(-35)
             make.top.equalTo(titleLabel.snp.bottom).offset(12)
         }
-        nameContainer.snp.makeConstraints { make in
+        nameFieldView.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(subtitleLabel.snp.bottom).offset(30)
             make.height.equalTo(50)
         }
-        lastNameContainer.snp.makeConstraints { make in
+        lastNameFieldView.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.top.equalTo(nameContainer.snp.bottom).offset(10)
+            make.top.equalTo(nameFieldView.snp.bottom).offset(10)
             make.height.equalTo(50)
-        }
-        nameField.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(20)
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(-20)
-        }
-        lastNameField.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(20)
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(-20)
         }
         nextButton.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-20)

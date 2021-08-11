@@ -54,7 +54,6 @@ class FriendsContactCell: NSView {
         addSubview(appImageView)
         
         let area = NSTrackingArea(rect: bounds, options: [.mouseEnteredAndExited, .activeAlways, .inVisibleRect], owner: self, userInfo: nil)
-        
         addTrackingArea(area)
         
         updateSubtitle()

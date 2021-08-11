@@ -12,12 +12,19 @@ class FlatButton: NSButton {
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
-        title = ""
-        wantsLayer = true
+        
+        commonInit()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+
+        commonInit()
+    }
+    
+    private func commonInit() {
+        title = ""
+        wantsLayer = true
     }
     
     override func draw(_ dirtyRect: NSRect) {
