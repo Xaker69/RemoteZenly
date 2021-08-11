@@ -1,7 +1,7 @@
 import Cocoa
 import WebKit
 
-class WelcomeViewController: NSViewController, WKUIDelegate {
+class WelcomeViewController: NavigationViewController, WKUIDelegate {
     
     var mainView: WelcomeView {
         return view as! WelcomeView
@@ -17,7 +17,6 @@ class WelcomeViewController: NSViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        view.translatesAutoresizingMaskIntoConstraints = true
-        preferredContentSize = NSSize(width: 350, height: 500)
 //
 //        let webConfiguration = WKWebViewConfiguration()
 //        webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -41,40 +40,9 @@ class WelcomeViewController: NSViewController, WKUIDelegate {
     }
     
     @objc func test() {
-        present(FriendsViewController(), animator: self)
+//        present(RegistrationViewController(), animator: NavigationViewController())
     }
         
-}
-
-extension WelcomeViewController: NSViewControllerPresentationAnimator {
-    func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
-        if let window = fromViewController.view.window {
-            viewController.view.wantsLayer = true
-            viewController.view.layerContentsRedrawPolicy = .onSetNeedsDisplay
-            viewController.view.alphaValue = 0
-            fromViewController.view.addSubview(viewController.view)
-            viewController.view.frame = fromViewController.view.frame
-            
-            NSAnimationContext.runAnimationGroup { context in
-                context.duration = 0.3
-                viewController.view.animator().alphaValue = 1.0
-            } completionHandler: {
-                window.contentViewController = viewController
-            }
-        }
-    }
-    
-    func animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
-        if let window = viewController.view.window {
-            NSAnimationContext.runAnimationGroup({ (context) -> Void in
-                viewController.view.animator().alphaValue = 0
-            }, completionHandler: { () -> Void in
-                fromViewController.view.alphaValue = 0
-                window.contentViewController = fromViewController
-                fromViewController.view.animator().alphaValue = 1.0
-            })
-        }
-    }
 }
 
 //extension WelcomeViewController: WKNavigationDelegate {

@@ -1,7 +1,7 @@
 import Cocoa
 
 class ButtonView: NSView {
-
+    
     lazy var titleLabel: NSLabel = {
         let label = NSLabel()
         label.alignment = .center

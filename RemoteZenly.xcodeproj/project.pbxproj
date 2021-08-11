@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D942697174B00C0F70E /* WelcomeViewController.swift */; };
 		21065D982697179D00C0F70E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D972697179D00C0F70E /* WelcomeView.swift */; };
+		213F15D026AB1FEC0008BE1E /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */; };
+		213F15D626AB41B70008BE1E /* NavigationBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15D526AB41B70008BE1E /* NavigationBackView.swift */; };
+		213F15DE26AB4CE10008BE1E /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15DD26AB4CE10008BE1E /* NavigationView.swift */; };
 		2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B51269A0A0F00796952 /* FlatButton.swift */; };
 		2C402B83269A38F100796952 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B82269A38F100796952 /* ButtonView.swift */; };
 		C409F1EF26E85A809EC3E838 /* Pods_RemoteZenly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */; };
@@ -31,6 +34,9 @@
 		06C7A5886B4DAE6D74901847 /* Pods-RemoteZenly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.debug.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.debug.xcconfig"; sourceTree = "<group>"; };
 		21065D942697174B00C0F70E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		21065D972697179D00C0F70E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		213F15D526AB41B70008BE1E /* NavigationBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackView.swift; sourceTree = "<group>"; };
+		213F15DD26AB4CE10008BE1E /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		2C402B51269A0A0F00796952 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		2C402B82269A38F100796952 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.release.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +98,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		213F15D126AB3F730008BE1E /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				213F15D226AB3F8F0008BE1E /* View */,
+				213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */,
+			);
+			path = NavigationViewController;
+			sourceTree = "<group>";
+		};
+		213F15D226AB3F8F0008BE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				213F15D526AB41B70008BE1E /* NavigationBackView.swift */,
+				213F15DD26AB4CE10008BE1E /* NavigationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1C58A83D78AC036B8A67276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +161,7 @@
 		CBA64C64263978CC00540D8E /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				213F15D126AB3F730008BE1E /* NavigationViewController */,
 				21065D92269716F500C0F70E /* Welcome */,
 				21065D91269716C300C0F70E /* Friends */,
 			);
@@ -313,10 +338,13 @@
 				CBA64C8226397E5500540D8E /* main.swift in Sources */,
 				CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */,
 				2C402B83269A38F100796952 /* ButtonView.swift in Sources */,
+				213F15D026AB1FEC0008BE1E /* NavigationViewController.swift in Sources */,
 				CBA64C9B2639AD1400540D8E /* ContactModel.swift in Sources */,
 				CBA64C902639A86000540D8E /* Cell.swift in Sources */,
+				213F15DE26AB4CE10008BE1E /* NavigationView.swift in Sources */,
 				CBA64C8626397E8800540D8E /* MainWindowController.swift in Sources */,
 				CBA64CAA2639BB5200540D8E /* NSLabel.swift in Sources */,
+				213F15D626AB41B70008BE1E /* NavigationBackView.swift in Sources */,
 				21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */,
 				CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */,
 				CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */,

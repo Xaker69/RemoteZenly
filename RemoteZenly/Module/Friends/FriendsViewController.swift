@@ -34,6 +34,10 @@ class FriendsViewController: NSViewController {
         }
     }
     
+//    private lazy var viewClicked: () -> () = {
+//        self.dismiss(<#T##viewController: NSViewController##NSViewController#>)
+//    }
+    
 }
 
 // MARK: - NSCollectionViewDataSource
