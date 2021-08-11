@@ -1,32 +1,52 @@
 import Cocoa
+import WebKit
 
-class WelcomeViewController: NSViewController {
-    
-    var mainView: WelcomeView {
-        return view as! WelcomeView
+class RegistrationViewController: NSViewController, WKUIDelegate {
+
+    var mainView: RegistrationView {
+        return view as! RegistrationView
     }
     
     override func loadView() {
-        let view = WelcomeView()
-        self.view = view
+        view = RegistrationView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.translatesAutoresizingMaskIntoConstraints = true
-        preferredContentSize = NSSize(width: 350, height: 500)
         
-        mainView.queryButton.target = self
-        mainView.queryButton.action = #selector(test)
+        mainView.webView.uiDelegate = self
+        mainView.webView.navigationDelegate = self
+        
+        mainView.vkButton.action = registerVK
     }
     
-    @objc func test() {
-        present(RegistrationViewController(), animator: self)
-    }
+    private func registerVK() {
+        let myURL = URL(string:"https://oauth.vk.com/authorize?client_id=7898732&display=page&redirect_uri=&scope=friends&response_type=token&v=5.131&state=123456")
+        let myRequest = URLRequest(url: myURL!)
+        mainView.webView.load(myRequest)
         
+        mainView.webView.isHidden = false
+    }
+    
 }
 
-extension WelcomeViewController: NSViewControllerPresentationAnimator {
+extension RegistrationViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        let url = webView.url?.absoluteString.replacingOccurrences(of: "#", with: "?")
+        guard let urlStr = url, let url = URLComponents(string: urlStr) else { return }
+        let token = url.queryItems?.first(where: { $0.name == "access_token" })?.value
+        
+        if let token = token {
+            print("=TOKEN=", token)
+            mainView.webView.isHidden = true
+            present(RegistrationNameViewController(), animator: self)
+        }
+    }
+    
+}
+
+extension RegistrationViewController: NSViewControllerPresentationAnimator {
     func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
         if let window = fromViewController.view.window {
             
@@ -67,3 +87,4 @@ extension WelcomeViewController: NSViewControllerPresentationAnimator {
         }
     }
 }
+
