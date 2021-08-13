@@ -16,10 +16,14 @@
 		2195BBD426C46DBF004133F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD326C46DBF004133F3 /* TextField.swift */; };
 		2195BBD726C47433004133F3 /* RegistrationNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD626C47433004133F3 /* RegistrationNicknameViewController.swift */; };
 		2195BBDA26C47484004133F3 /* RegistrationNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD926C47484004133F3 /* RegistrationNicknameView.swift */; };
+		21B1FEB126C5EFDB0066B925 /* RegistrationImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1FEB026C5EFDB0066B925 /* RegistrationImageViewController.swift */; };
+		21B1FEB426C5EFF40066B925 /* RegistrationImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1FEB326C5EFF40066B925 /* RegistrationImageView.swift */; };
+		21F3679226C6012000BD030F /* RegistrationVKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679126C6012000BD030F /* RegistrationVKController.swift */; };
+		21F3679526C6094800BD030F /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679426C6094800BD030F /* RegistrationModel.swift */; };
 		2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B51269A0A0F00796952 /* FlatButton.swift */; };
 		2C402B83269A38F100796952 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B82269A38F100796952 /* ButtonView.swift */; };
-		2C96F35226C2F604000BAA30 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35126C2F604000BAA30 /* RegistrationViewController.swift */; };
-		2C96F35526C2F634000BAA30 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35426C2F634000BAA30 /* RegistrationView.swift */; };
+		2C96F35226C2F604000BAA30 /* RegistrationSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35126C2F604000BAA30 /* RegistrationSocialViewController.swift */; };
+		2C96F35526C2F634000BAA30 /* RegistrationSocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35426C2F634000BAA30 /* RegistrationSocialView.swift */; };
 		2C96F35926C3083D000BAA30 /* RegistrationNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35826C3083D000BAA30 /* RegistrationNameViewController.swift */; };
 		2C96F35C26C3085B000BAA30 /* RegistrationNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35B26C3085B000BAA30 /* RegistrationNameView.swift */; };
 		C409F1EF26E85A809EC3E838 /* Pods_RemoteZenly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8A3E9A4697424082F038B /* Pods_RemoteZenly.framework */; };
@@ -49,10 +53,14 @@
 		2195BBD326C46DBF004133F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		2195BBD626C47433004133F3 /* RegistrationNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNicknameViewController.swift; sourceTree = "<group>"; };
 		2195BBD926C47484004133F3 /* RegistrationNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNicknameView.swift; sourceTree = "<group>"; };
+		21B1FEB026C5EFDB0066B925 /* RegistrationImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationImageViewController.swift; sourceTree = "<group>"; };
+		21B1FEB326C5EFF40066B925 /* RegistrationImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationImageView.swift; sourceTree = "<group>"; };
+		21F3679126C6012000BD030F /* RegistrationVKController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVKController.swift; sourceTree = "<group>"; };
+		21F3679426C6094800BD030F /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		2C402B51269A0A0F00796952 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		2C402B82269A38F100796952 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		2C96F35126C2F604000BAA30 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
-		2C96F35426C2F634000BAA30 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		2C96F35126C2F604000BAA30 /* RegistrationSocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSocialViewController.swift; sourceTree = "<group>"; };
+		2C96F35426C2F634000BAA30 /* RegistrationSocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSocialView.swift; sourceTree = "<group>"; };
 		2C96F35826C3083D000BAA30 /* RegistrationNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewController.swift; sourceTree = "<group>"; };
 		2C96F35B26C3085B000BAA30 /* RegistrationNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNameView.swift; sourceTree = "<group>"; };
 		3B73CA6049C7D6C443F212D3 /* Pods-RemoteZenly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteZenly.release.xcconfig"; path = "Target Support Files/Pods-RemoteZenly/Pods-RemoteZenly.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,19 +177,65 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		2C96F35026C2F5D7000BAA30 /* Registration */ = {
+		21B1FEAF26C5EFB40066B925 /* RegistrationImage */ = {
+			isa = PBXGroup;
+			children = (
+				21B1FEB226C5EFE20066B925 /* View */,
+				21B1FEB026C5EFDB0066B925 /* RegistrationImageViewController.swift */,
+			);
+			path = RegistrationImage;
+			sourceTree = "<group>";
+		};
+		21B1FEB226C5EFE20066B925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21B1FEB326C5EFF40066B925 /* RegistrationImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21F3678F26C600A000BD030F /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				21F3679326C6093200BD030F /* Model */,
+				21F3679026C600FE00BD030F /* RegistrationVK */,
+				2C96F35026C2F5D7000BAA30 /* RegistrationSocial */,
+				2C96F35626C30808000BAA30 /* RegistrationName */,
+				2195BBD526C473F2004133F3 /* RegistrationNickname */,
+				21B1FEAF26C5EFB40066B925 /* RegistrationImage */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		21F3679026C600FE00BD030F /* RegistrationVK */ = {
+			isa = PBXGroup;
+			children = (
+				21F3679126C6012000BD030F /* RegistrationVKController.swift */,
+			);
+			path = RegistrationVK;
+			sourceTree = "<group>";
+		};
+		21F3679326C6093200BD030F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21F3679426C6094800BD030F /* RegistrationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C96F35026C2F5D7000BAA30 /* RegistrationSocial */ = {
 			isa = PBXGroup;
 			children = (
 				2C96F35326C2F60E000BAA30 /* VIew */,
-				2C96F35126C2F604000BAA30 /* RegistrationViewController.swift */,
+				2C96F35126C2F604000BAA30 /* RegistrationSocialViewController.swift */,
 			);
-			path = Registration;
+			path = RegistrationSocial;
 			sourceTree = "<group>";
 		};
 		2C96F35326C2F60E000BAA30 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
-				2C96F35426C2F634000BAA30 /* RegistrationView.swift */,
+				2C96F35426C2F634000BAA30 /* RegistrationSocialView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -248,9 +302,7 @@
 		CBA64C64263978CC00540D8E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				2195BBD526C473F2004133F3 /* RegistrationNickname */,
-				2C96F35626C30808000BAA30 /* RegistrationName */,
-				2C96F35026C2F5D7000BAA30 /* Registration */,
+				21F3678F26C600A000BD030F /* Registration */,
 				21065D92269716F500C0F70E /* Welcome */,
 				21065D91269716C300C0F70E /* Friends */,
 			);
@@ -425,10 +477,13 @@
 			files = (
 				CBA64C8226397E5500540D8E /* main.swift in Sources */,
 				CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */,
+				21B1FEB426C5EFF40066B925 /* RegistrationImageView.swift in Sources */,
 				2195BBCF26C4647C004133F3 /* TextFieldView.swift in Sources */,
 				2C96F35926C3083D000BAA30 /* RegistrationNameViewController.swift in Sources */,
+				21F3679526C6094800BD030F /* RegistrationModel.swift in Sources */,
 				2C402B83269A38F100796952 /* ButtonView.swift in Sources */,
 				2195BBDA26C47484004133F3 /* RegistrationNicknameView.swift in Sources */,
+				21F3679226C6012000BD030F /* RegistrationVKController.swift in Sources */,
 				213F15D026AB1FEC0008BE1E /* NavigationViewController.swift in Sources */,
 				CBA64C9B2639AD1400540D8E /* ContactModel.swift in Sources */,
 				CBA64C902639A86000540D8E /* Cell.swift in Sources */,
@@ -437,17 +492,18 @@
 				CBA64CAA2639BB5200540D8E /* NSLabel.swift in Sources */,
 				213F15D626AB41B70008BE1E /* NavigationBackView.swift in Sources */,
 				21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */,
-				2C96F35226C2F604000BAA30 /* RegistrationViewController.swift in Sources */,
+				2C96F35226C2F604000BAA30 /* RegistrationSocialViewController.swift in Sources */,
 				2C96F35C26C3085B000BAA30 /* RegistrationNameView.swift in Sources */,
 				CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */,
 				CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */,
-				2C96F35526C2F634000BAA30 /* RegistrationView.swift in Sources */,
+				2C96F35526C2F634000BAA30 /* RegistrationSocialView.swift in Sources */,
 				2195BBD426C46DBF004133F3 /* TextField.swift in Sources */,
 				CBA64C662639790100540D8E /* FriendsViewController.swift in Sources */,
 				2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */,
 				CBA64C6B2639794A00540D8E /* FriendsView.swift in Sources */,
 				2195BBD726C47433004133F3 /* RegistrationNicknameViewController.swift in Sources */,
 				CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */,
+				21B1FEB126C5EFDB0066B925 /* RegistrationImageViewController.swift in Sources */,
 				CBA64CA32639AEED00540D8E /* FriendsContactCell.swift in Sources */,
 				21065D982697179D00C0F70E /* WelcomeView.swift in Sources */,
 			);

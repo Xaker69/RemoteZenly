@@ -1,7 +1,7 @@
 import Cocoa
 import WebKit
 
-class RegistrationView: NavigationView {
+class RegistrationSocialView: NavigationView {
     
     let emojiLabel: NSLabel = {
         let label = NSLabel()
@@ -43,14 +43,6 @@ class RegistrationView: NavigationView {
         return button
     }()
     
-    let webView: WKWebView = {
-        let webConfiguration = WKWebViewConfiguration()
-        let view = WKWebView(frame: .zero, configuration: webConfiguration)
-        view.isHidden = true
-        
-        return view
-    }()
-    
     override func initialization() {
         super.initialization()
         
@@ -58,7 +50,6 @@ class RegistrationView: NavigationView {
         addSubview(titleLabel)
         addSubview(subtitleLabel)
         addSubview(vkButton)
-        addSubview(webView)
         
         setupConstreints()
     }
@@ -88,16 +79,7 @@ class RegistrationView: NavigationView {
             make.height.equalTo(50)
         }
         
-        webView.snp.makeConstraints { make in
-            if #available(macOS 11.0, *) {
-                make.top.equalTo(safeAreaLayoutGuide.snp.top)
-            } else {
-                make.top.equalToSuperview()
-            }
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.bottom.equalToSuperview()
-        }
+        
     }
     
 }

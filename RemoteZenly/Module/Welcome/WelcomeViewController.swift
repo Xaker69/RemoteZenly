@@ -21,7 +21,7 @@ class WelcomeViewController: NavigationViewController {
     }
     
     @objc func test() {
-        present(RegistrationViewController())
+        present(RegistrationSocialViewController())
     }
         
 }

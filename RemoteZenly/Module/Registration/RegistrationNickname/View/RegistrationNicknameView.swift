@@ -6,7 +6,7 @@ class RegistrationNicknameView: NavigationView {
         let label = NSLabel()
         label.font = .systemFont(ofSize: 44, weight: .regular)
         label.alignment = .center
-        label.stringValue = "📇"
+        label.stringValue = "🙌"
         
         return label
     }()
@@ -15,7 +15,7 @@ class RegistrationNicknameView: NavigationView {
         let label = NSLabel()
         label.font = .systemFont(ofSize: 28, weight: .heavy)
         label.textColor = .white
-        label.stringValue = "Имя и фамилия"
+        label.stringValue = "Выбери никнейм"
         label.alignment = .center
         
         return label
@@ -24,31 +24,30 @@ class RegistrationNicknameView: NavigationView {
     let subtitleLabel: NSLabel = {
         let label = NSLabel()
         label.font = .systemFont(ofSize: 14, weight: .regular)
-        label.stringValue = "Всем будет проще пользоваться с реальными данными. Спасибо!"
+        label.stringValue = "С никнеймом коллегам и друзьям будет проще тебя здесь отыскать"
         label.textColor = .white
         label.alignment = .center
         
         return label
     }()
     
-    let nameFieldView: TextFieldView = {
-        let view = TextFieldView()
+    let nicknameFieldView: TextFieldView = {
+        let view = TextFieldView(label: "@")
         view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.08).cgColor
         view.layer?.cornerRadius = 10
         view.highlightedBackgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
-        view.textField.placeholderString = "Имя"
+        view.textField.placeholderString = "Никнейм"
         
         return view
     }()
     
-    let lastNameFieldView: TextFieldView = {
-        let view = TextFieldView()
-        view.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.08).cgColor
-        view.layer?.cornerRadius = 10
-        view.highlightedBackgroundColor = NSColor.white.withAlphaComponent(0.14).cgColor
-        view.textField.placeholderString = "Фамилия"
+    let validLabel: NSLabel = {
+        let label = NSLabel()
+        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.textColor = .fromHex(hex: 0xFF6969)
+        label.stringValue = "4 и более символа!"
         
-        return view
+        return label
     }()
     
     let nextButton: FlatButton = {
@@ -57,9 +56,10 @@ class RegistrationNicknameView: NavigationView {
             NSColor.fromHex(hex: 0x00FFE9), NSColor.fromHex(hex: 0x0096FF)
         ])
         
+        button.isEnabled = false
         button.gradient = gradient
         button.text = "Продолжить"
-        button.titleFont = NSFont.systemFont(ofSize: 18, weight: .heavy)
+        button.titleFont = .systemFont(ofSize: 18, weight: .heavy)
         button.textColor = .black
         button.layer?.cornerRadius = 10
         
@@ -72,13 +72,13 @@ class RegistrationNicknameView: NavigationView {
         addSubview(emojiLabel)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
-        addSubview(nameFieldView)
-        addSubview(lastNameFieldView)
+        addSubview(nicknameFieldView)
+        addSubview(validLabel)
         addSubview(nextButton)
         
         setupConstreints()
     }
-    
+
     private func setupConstreints() {
         emojiLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(61)
@@ -97,17 +97,15 @@ class RegistrationNicknameView: NavigationView {
             make.trailing.equalToSuperview().offset(-35)
             make.top.equalTo(titleLabel.snp.bottom).offset(12)
         }
-        nameFieldView.snp.makeConstraints { make in
+        nicknameFieldView.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(subtitleLabel.snp.bottom).offset(30)
             make.height.equalTo(50)
         }
-        lastNameFieldView.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
-            make.top.equalTo(nameFieldView.snp.bottom).offset(10)
-            make.height.equalTo(50)
+        validLabel.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(66)
+            make.top.equalTo(nicknameFieldView.snp.bottom).offset(10)
         }
         nextButton.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-20)

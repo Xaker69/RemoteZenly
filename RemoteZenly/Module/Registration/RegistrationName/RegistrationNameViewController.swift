@@ -2,6 +2,8 @@ import Cocoa
 
 class RegistrationNameViewController: NavigationViewController {
 
+    var model: RegistrationModel!
+    
     var mainView: RegistrationNameView {
         return view as! RegistrationNameView
     }
@@ -19,8 +21,19 @@ class RegistrationNameViewController: NavigationViewController {
         mainView.nextButton.action = #selector(nextButtonTapped)
     }
     
+    func fillFields(with firstName: String?, _ lastName: String?) {
+        mainView.nameFieldView.textField.stringValue = firstName ?? ""
+        mainView.lastNameFieldView.textField.stringValue = lastName ?? ""
+    }
+    
     @objc private func nextButtonTapped() {
-        present(RegistrationNicknameViewController())
+        model.firstName = mainView.nameFieldView.textField.stringValue
+        model.secondName = mainView.lastNameFieldView.textField.stringValue
+        
+        let vc = RegistrationNicknameViewController()
+        vc.model = model
+        
+        present(vc)
     }
     
 }

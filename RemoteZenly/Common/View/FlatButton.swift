@@ -10,6 +10,16 @@ class FlatButton: NSButton {
     var gradientFinalColor: NSColor = .black
     var text: String?
     
+    override var isEnabled: Bool {
+        didSet {
+            if isEnabled {
+                alphaValue = 1
+            } else {
+                alphaValue = 0.5
+            }
+        }
+    }
+    
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
