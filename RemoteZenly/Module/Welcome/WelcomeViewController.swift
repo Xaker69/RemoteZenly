@@ -13,8 +13,6 @@ class WelcomeViewController: NavigationViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.translatesAutoresizingMaskIntoConstraints = true
-        preferredContentSize = NSSize(width: 350, height: 500)
         
         mainView.queryButton.target = self
         mainView.queryButton.action = #selector(test)

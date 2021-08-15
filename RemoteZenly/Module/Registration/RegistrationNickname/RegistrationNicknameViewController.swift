@@ -3,7 +3,7 @@ import Alamofire
 
 class RegistrationNicknameViewController: NavigationViewController {
     
-    var model: RegistrationModel!
+    var model: RegistrationModel?
     
     var mainView: RegistrationNicknameView {
         return view as! RegistrationNicknameView
@@ -23,22 +23,12 @@ class RegistrationNicknameViewController: NavigationViewController {
     }
     
     @objc private func nextButtonTapped() {
-        model.nickname = mainView.nicknameFieldView.textField.stringValue
+        model?.nickname = mainView.nicknameFieldView.textField.stringValue
         
-        AF.request("https://api.apptracker.blaster.cool/api/user/me", method: .get, parameters: model).response { response in
-            switch response.result {
-            case .success(let data):
-                guard let data = data else { return }
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                    
-                } catch {
-                    print(error)
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
+        let vc = RegistrationImageViewController()
+        vc.model = model
+        
+        present(vc)
     }
 }
 

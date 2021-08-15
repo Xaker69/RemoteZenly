@@ -2,8 +2,9 @@ import Cocoa
 
 class NavigationView: NSView {
 
-    let backView: NavigationBackView = {
-        let view = NavigationBackView()
+    let backView: HighlightedView = {
+        let view = HighlightedView(with: NSImage(named: "shadowArrow"))
+        view.titleLabel.stringValue = "Назад"
         
         return view
     }()

@@ -2,7 +2,7 @@ import Cocoa
 
 class RegistrationNameViewController: NavigationViewController {
 
-    var model: RegistrationModel!
+    var model: RegistrationModel?
     
     var mainView: RegistrationNameView {
         return view as! RegistrationNameView
@@ -26,9 +26,9 @@ class RegistrationNameViewController: NavigationViewController {
         mainView.lastNameFieldView.textField.stringValue = lastName ?? ""
     }
     
-    @objc private func nextButtonTapped() {
-        model.firstName = mainView.nameFieldView.textField.stringValue
-        model.secondName = mainView.lastNameFieldView.textField.stringValue
+    @objc private func nextButtonTapped() {        
+        model?.firstName = mainView.nameFieldView.textField.stringValue
+        model?.secondName = mainView.lastNameFieldView.textField.stringValue
         
         let vc = RegistrationNicknameViewController()
         vc.model = model

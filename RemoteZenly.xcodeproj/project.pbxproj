@@ -10,7 +10,7 @@
 		21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D942697174B00C0F70E /* WelcomeViewController.swift */; };
 		21065D982697179D00C0F70E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21065D972697179D00C0F70E /* WelcomeView.swift */; };
 		213F15D026AB1FEC0008BE1E /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */; };
-		213F15D626AB41B70008BE1E /* NavigationBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15D526AB41B70008BE1E /* NavigationBackView.swift */; };
+		213F15D626AB41B70008BE1E /* HighlightedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15D526AB41B70008BE1E /* HighlightedView.swift */; };
 		213F15DE26AB4CE10008BE1E /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15DD26AB4CE10008BE1E /* NavigationView.swift */; };
 		2195BBCF26C4647C004133F3 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBCE26C4647C004133F3 /* TextFieldView.swift */; };
 		2195BBD426C46DBF004133F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD326C46DBF004133F3 /* TextField.swift */; };
@@ -20,6 +20,9 @@
 		21B1FEB426C5EFF40066B925 /* RegistrationImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1FEB326C5EFF40066B925 /* RegistrationImageView.swift */; };
 		21F3679226C6012000BD030F /* RegistrationVKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679126C6012000BD030F /* RegistrationVKController.swift */; };
 		21F3679526C6094800BD030F /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679426C6094800BD030F /* RegistrationModel.swift */; };
+		21F3679A26C97FC100BD030F /* RegistrationImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679926C97FC100BD030F /* RegistrationImageDelegate.swift */; };
+		21F3679C26C9AAD800BD030F /* RMZImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679B26C9AAD800BD030F /* RMZImageView.swift */; };
+		21F3679E26C9CE1500BD030F /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3679D26C9CE1500BD030F /* AppMenu.swift */; };
 		2C402B52269A0A0F00796952 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B51269A0A0F00796952 /* FlatButton.swift */; };
 		2C402B83269A38F100796952 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C402B82269A38F100796952 /* ButtonView.swift */; };
 		2C96F35226C2F604000BAA30 /* RegistrationSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F35126C2F604000BAA30 /* RegistrationSocialViewController.swift */; };
@@ -47,7 +50,7 @@
 		21065D942697174B00C0F70E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		21065D972697179D00C0F70E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		213F15D526AB41B70008BE1E /* NavigationBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackView.swift; sourceTree = "<group>"; };
+		213F15D526AB41B70008BE1E /* HighlightedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedView.swift; sourceTree = "<group>"; };
 		213F15DD26AB4CE10008BE1E /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		2195BBCE26C4647C004133F3 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		2195BBD326C46DBF004133F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		21B1FEB326C5EFF40066B925 /* RegistrationImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationImageView.swift; sourceTree = "<group>"; };
 		21F3679126C6012000BD030F /* RegistrationVKController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVKController.swift; sourceTree = "<group>"; };
 		21F3679426C6094800BD030F /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		21F3679926C97FC100BD030F /* RegistrationImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationImageDelegate.swift; sourceTree = "<group>"; };
+		21F3679B26C9AAD800BD030F /* RMZImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMZImageView.swift; sourceTree = "<group>"; };
+		21F3679D26C9CE1500BD030F /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		2C402B51269A0A0F00796952 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		2C402B82269A38F100796952 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		2C96F35126C2F604000BAA30 /* RegistrationSocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSocialViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +140,6 @@
 		213F15D226AB3F8F0008BE1E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				213F15D526AB41B70008BE1E /* NavigationBackView.swift */,
 				213F15DD26AB4CE10008BE1E /* NavigationView.swift */,
 			);
 			path = View;
@@ -155,7 +160,9 @@
 				CBA64CA92639BB5200540D8E /* NSLabel.swift */,
 				2C402B82269A38F100796952 /* ButtonView.swift */,
 				2195BBCE26C4647C004133F3 /* TextFieldView.swift */,
+				213F15D526AB41B70008BE1E /* HighlightedView.swift */,
 				2195BBD326C46DBF004133F3 /* TextField.swift */,
+				21F3679B26C9AAD800BD030F /* RMZImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 		21B1FEAF26C5EFB40066B925 /* RegistrationImage */ = {
 			isa = PBXGroup;
 			children = (
+				21F3679826C97FAB00BD030F /* Delegate */,
 				21B1FEB226C5EFE20066B925 /* View */,
 				21B1FEB026C5EFDB0066B925 /* RegistrationImageViewController.swift */,
 			);
@@ -221,6 +229,14 @@
 				21F3679426C6094800BD030F /* RegistrationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		21F3679826C97FAB00BD030F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				21F3679926C97FC100BD030F /* RegistrationImageDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		2C96F35026C2F5D7000BAA30 /* RegistrationSocial */ = {
@@ -289,6 +305,7 @@
 				CBA64C932639A92600540D8E /* Common */,
 				CBA64C64263978CC00540D8E /* Module */,
 				CBA64C532639788E00540D8E /* AppDelegate.swift */,
+				21F3679D26C9CE1500BD030F /* AppMenu.swift */,
 				CBA64C8526397E8800540D8E /* MainWindowController.swift */,
 				CBA64C8126397E5500540D8E /* main.swift */,
 				CBA64C5C2639788F00540D8E /* Info.plist */,
@@ -490,10 +507,12 @@
 				213F15DE26AB4CE10008BE1E /* NavigationView.swift in Sources */,
 				CBA64C8626397E8800540D8E /* MainWindowController.swift in Sources */,
 				CBA64CAA2639BB5200540D8E /* NSLabel.swift in Sources */,
-				213F15D626AB41B70008BE1E /* NavigationBackView.swift in Sources */,
+				213F15D626AB41B70008BE1E /* HighlightedView.swift in Sources */,
 				21065D952697174B00C0F70E /* WelcomeViewController.swift in Sources */,
+				21F3679C26C9AAD800BD030F /* RMZImageView.swift in Sources */,
 				2C96F35226C2F604000BAA30 /* RegistrationSocialViewController.swift in Sources */,
 				2C96F35C26C3085B000BAA30 /* RegistrationNameView.swift in Sources */,
+				21F3679A26C97FC100BD030F /* RegistrationImageDelegate.swift in Sources */,
 				CBA64C962639A94200540D8E /* NSCollectionViewItem.swift in Sources */,
 				CBA64C9F2639AD8C00540D8E /* NSCollectionView+Item.swift in Sources */,
 				2C96F35526C2F634000BAA30 /* RegistrationSocialView.swift in Sources */,
@@ -505,6 +524,7 @@
 				CBA64C542639788E00540D8E /* AppDelegate.swift in Sources */,
 				21B1FEB126C5EFDB0066B925 /* RegistrationImageViewController.swift in Sources */,
 				CBA64CA32639AEED00540D8E /* FriendsContactCell.swift in Sources */,
+				21F3679E26C9CE1500BD030F /* AppMenu.swift in Sources */,
 				21065D982697179D00C0F70E /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,35 +1,42 @@
 import Cocoa
 
-class NavigationBackView: NSView {
+class HighlightedView: NSView {
 
     var action: (() -> ())?
     
-    let arrow: NSImageView = {
+    let imageView: NSImageView = {
         let view = NSImageView()
-        view.image = NSImage(named: "shadowArrow")
         
         return view
     }()
     
     let titleLabel: NSLabel = {
         let label = NSLabel()
-        label.stringValue = "Назад"
+        label.stringValue = "Кнопка"
         label.font = .systemFont(ofSize: 14, weight: .bold)
         label.textColor = .white
         
         return label
     }()
     
+    init(with image: NSImage?) {
+        super.init(frame: .zero)
+        
+        imageView.image = image
+        
+        commonInit(showImage: true)
+    }
+    
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
-        commonInit()
+        commonInit(showImage: false)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        commonInit()
+        commonInit(showImage: false)
     }
     
     override func mouseEntered(with event: NSEvent) {
@@ -64,29 +71,39 @@ class NavigationBackView: NSView {
         action?()
     }
     
-    private func commonInit() {
+    private func commonInit(showImage: Bool) {
         wantsLayer = true
         layer?.cornerRadius = 10
         
         let area = NSTrackingArea(rect: bounds, options: [.mouseEnteredAndExited, .activeAlways, .inVisibleRect], owner: self, userInfo: nil)
         addTrackingArea(area)
         
-        addSubview(arrow)
+        if showImage {
+            addSubview(imageView)
+        }
+        
         addSubview(titleLabel)
         
-        setupConstraints()
+        setupConstraints(showImage: showImage)
     }
     
-    private func setupConstraints() {
-        arrow.snp.makeConstraints { make in
-            make.width.height.equalTo(24)
-            make.left.equalToSuperview().offset(10)
-            make.centerY.equalToSuperview().offset(1.5)
+    private func setupConstraints(showImage: Bool) {
+        if showImage {
+            imageView.snp.makeConstraints { make in
+                make.width.height.equalTo(24)
+                make.left.equalToSuperview().offset(10)
+                make.centerY.equalToSuperview().offset(1.5)
+            }
         }
         titleLabel.snp.makeConstraints { make in
-            make.centerY.equalTo(arrow.snp.centerY).offset(-2)
-            make.left.equalTo(arrow.snp.right).offset(8)
             make.right.equalToSuperview().offset(-12)
+            if showImage {
+                make.centerY.equalTo(imageView.snp.centerY).offset(-2)
+                make.left.equalTo(imageView.snp.right).offset(8)
+            } else {
+                make.centerY.equalToSuperview()
+                make.left.equalToSuperview().offset(12)
+            }
         }
     }
     
