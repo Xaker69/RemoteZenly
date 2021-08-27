@@ -1,6 +1,4 @@
 import Cocoa
-import WebKit
-import Alamofire
 
 class RegistrationSocialViewController: NavigationViewController {
 

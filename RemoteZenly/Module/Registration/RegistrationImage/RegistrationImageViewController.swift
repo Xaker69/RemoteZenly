@@ -1,4 +1,5 @@
 import Cocoa
+import Alamofire
 
 class RegistrationImageViewController: NavigationViewController {
     
@@ -73,7 +74,13 @@ class RegistrationImageViewController: NavigationViewController {
     }
     
     @objc private func nextButtonTapped() {
-        
+        guard let model = model else { return }
+        let params = ["type": model.type.rawValue, "token": model.token!, "nickname": model.nickname!, "first_name": model.firstName!, "second_name": model.secondName!]
+        let url = URL(string: "https://api.orbit.house/api/v1/auth/signup")!
+        let headers: HTTPHeaders = [.contentType("multipart/form-data")]
+        AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default, headers: headers).responseString(completionHandler: { string in
+            
+        })
     }
     
     @objc private func pastImage() {

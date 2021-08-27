@@ -12,6 +12,8 @@
 		213F15D026AB1FEC0008BE1E /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */; };
 		213F15D626AB41B70008BE1E /* HighlightedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15D526AB41B70008BE1E /* HighlightedView.swift */; };
 		213F15DE26AB4CE10008BE1E /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F15DD26AB4CE10008BE1E /* NavigationView.swift */; };
+		21481CB226D0438A0072945E /* RegistrationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21481CB126D0438A0072945E /* RegistrationSuccessViewController.swift */; };
+		21481CB526D043A60072945E /* RegistrationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21481CB426D043A60072945E /* RegistrationSuccessView.swift */; };
 		2195BBCF26C4647C004133F3 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBCE26C4647C004133F3 /* TextFieldView.swift */; };
 		2195BBD426C46DBF004133F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD326C46DBF004133F3 /* TextField.swift */; };
 		2195BBD726C47433004133F3 /* RegistrationNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195BBD626C47433004133F3 /* RegistrationNicknameViewController.swift */; };
@@ -52,6 +54,8 @@
 		213F15CF26AB1FEC0008BE1E /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		213F15D526AB41B70008BE1E /* HighlightedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedView.swift; sourceTree = "<group>"; };
 		213F15DD26AB4CE10008BE1E /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		21481CB126D0438A0072945E /* RegistrationSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessViewController.swift; sourceTree = "<group>"; };
+		21481CB426D043A60072945E /* RegistrationSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessView.swift; sourceTree = "<group>"; };
 		2195BBCE26C4647C004133F3 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		2195BBD326C46DBF004133F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		2195BBD626C47433004133F3 /* RegistrationNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNicknameViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		21481CB026D043500072945E /* RegistrationSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				21481CB326D043930072945E /* View */,
+				21481CB126D0438A0072945E /* RegistrationSuccessViewController.swift */,
+			);
+			path = RegistrationSuccess;
+			sourceTree = "<group>";
+		};
+		21481CB326D043930072945E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21481CB426D043A60072945E /* RegistrationSuccessView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2195BBD126C46D30004133F3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +232,7 @@
 				2C96F35626C30808000BAA30 /* RegistrationName */,
 				2195BBD526C473F2004133F3 /* RegistrationNickname */,
 				21B1FEAF26C5EFB40066B925 /* RegistrationImage */,
+				21481CB026D043500072945E /* RegistrationSuccess */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -495,9 +517,11 @@
 				CBA64C8226397E5500540D8E /* main.swift in Sources */,
 				CBA64C8C26398B7300540D8E /* TranslucentWindow.swift in Sources */,
 				21B1FEB426C5EFF40066B925 /* RegistrationImageView.swift in Sources */,
+				21481CB526D043A60072945E /* RegistrationSuccessView.swift in Sources */,
 				2195BBCF26C4647C004133F3 /* TextFieldView.swift in Sources */,
 				2C96F35926C3083D000BAA30 /* RegistrationNameViewController.swift in Sources */,
 				21F3679526C6094800BD030F /* RegistrationModel.swift in Sources */,
+				21481CB226D0438A0072945E /* RegistrationSuccessViewController.swift in Sources */,
 				2C402B83269A38F100796952 /* ButtonView.swift in Sources */,
 				2195BBDA26C47484004133F3 /* RegistrationNicknameView.swift in Sources */,
 				21F3679226C6012000BD030F /* RegistrationVKController.swift in Sources */,

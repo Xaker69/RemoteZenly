@@ -1,5 +1,4 @@
 import Cocoa
-import Alamofire
 
 class RegistrationNicknameViewController: NavigationViewController {
     
