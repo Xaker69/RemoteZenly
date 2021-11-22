@@ -1,4 +1,4 @@
-import Foundation
+import Cocoa
 
 struct RegistrationModel: Codable {
     let type: RegistrationType
@@ -6,6 +6,8 @@ struct RegistrationModel: Codable {
     var nickname: String?
     var firstName: String?
     var secondName: String?
+    var avatar: Data?
+    var avatarName: String?
 }
 
 enum RegistrationType: String, Codable {

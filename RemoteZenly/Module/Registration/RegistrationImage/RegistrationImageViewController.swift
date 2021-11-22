@@ -75,12 +75,21 @@ class RegistrationImageViewController: NavigationViewController {
     
     @objc private func nextButtonTapped() {
         guard let model = model else { return }
-        let params = ["type": model.type.rawValue, "token": model.token!, "nickname": model.nickname!, "first_name": model.firstName!, "second_name": model.secondName!]
+        let params = ["type": "vk", "token": model.token!, "nickname": model.nickname!, "first_name": model.firstName!, "second_name": model.secondName!]
         let url = URL(string: "https://api.orbit.house/api/v1/auth/signup")!
         let headers: HTTPHeaders = [.contentType("multipart/form-data")]
-        AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default, headers: headers).responseString(completionHandler: { string in
+        
+        AF.upload(multipartFormData: { formData in
+            for (key, value) in params {
+                formData.append("\(value)".data(using: .utf8)!, withName: key as String)
+            }
             
-        })
+            if let data = model.avatar, let name = model.avatarName {
+                formData.append(data, withName: "avatar", fileName: name, mimeType: "image/jpg")
+            }
+        }, to: url, method: .post, headers: headers).response { responseData in
+            
+        }
     }
     
     @objc private func pastImage() {
@@ -89,11 +98,10 @@ class RegistrationImageViewController: NavigationViewController {
         guard
             let data = pasteboard.data(forType: .fileURL),
             let str =  String(data: data, encoding: .utf8),
-            let url = URL(string: str),
-            let image = NSImage(contentsOf: url)
+            let url = URL(string: str)
         else { return }
         
-        handleImage(image)
+        handleFile(at: url)
     }
     
     @objc private func openFinder() {
@@ -103,8 +111,7 @@ class RegistrationImageViewController: NavigationViewController {
         panel.beginSheetModal(for: window) { result in
             if (result == .OK) {
                 let url = panel.urls[0]
-                let image = NSImage(contentsOf: url)
-                self.handleImage(image)
+                self.handleFile(at: url)
             }
         }
     }
@@ -125,6 +132,7 @@ class RegistrationImageViewController: NavigationViewController {
     }
     
     private func handleFile(at url: URL) {
+        model?.avatarName = url.lastPathComponent
         let image = NSImage(contentsOf: url)
         OperationQueue.main.addOperation {
             self.handleImage(image)
@@ -134,6 +142,7 @@ class RegistrationImageViewController: NavigationViewController {
     private func handleImage(_ image: NSImage?) {
         guard let image = image else { return }
         
+        model?.avatar = image.tiffRepresentation
         mainView.imageView.image = image
         mainView.imageView.isImageChoosed = true
         mainView.titleLabel.stringValue = "Супер! Почти всё готово"
